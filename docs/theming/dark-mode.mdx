@@ -112,21 +112,21 @@ For more information regarding `color-scheme` please see https://web.dev/color-s
 :::
 
 :::note
-For developers looking to customize the theme color under the status bar in Safari on iOS 15 or the toolbar in Safari on macOS, see [`theme-color` Meta](./advanced.md#theme-color-meta).
+For developers looking to customize the theme color under the status bar in Safari on iOS 15 or the toolbar in Safari on macOS, see [`theme-color` Meta](./advanced#theme-color-meta).
 :::
 
 ## Ionic Dark Theme
 
 Ionic has a recommended theme for variables to use in order to get a dark mode based on the device running the app. It can be broken down into the following parts:
 
-1. Changing the default [Ionic colors](colors.md) for all [modes](platform-styles.md#ionic-modes) to complement the dark background in the `body.dark` selector.
+1. Changing the default [Ionic colors](colors) for all [modes](platform-styles#ionic-modes) to complement the dark background in the `body.dark` selector.
 2. Setting variables for the dark theme on `ios` devices.
 3. Setting variables for the dark theme on `md` devices.
 
 The following code can be copied and pasted into an app's global CSS file to get Ionic's dark theme. We are [using the CSS media query](#using-media-queries) to enable dark mode. If older browser support is required, use the method described in the [combining with JavaScript](#combining-with-javascript) section.
 
 :::info
-For more information on the variables that are being changed, including other variables that can be added to further customize, see [Themes](themes.md).
+For more information on the variables that are being changed, including other variables that can be added to further customize, see [Themes](themes).
 :::
 
 ```css
