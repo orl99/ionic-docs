@@ -1,6 +1,7 @@
 ---
-title: "ion-tab-bar"
+title: 'ion-tab-bar'
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -13,18 +14,17 @@ import Slots from '@ionic-internal/component-api/v7/tab-bar/slots.md';
 
 <head>
   <title>ion-tab-bar: Tab Bar Component with CSS Custom Properties</title>
-  <meta name="description" content="tab barコンポーネントには、タブボタンのセットが含まれており、通信するためにはタブの内側にタブバーを用意する必要があります。使用方法とCSSカスタムプロパティについてはこちらをご覧ください。" />
+  <meta
+    name="description"
+    content="tab barコンポーネントには、タブボタンのセットが含まれており、通信するためにはタブの内側にタブバーを用意する必要があります。使用方法とCSSカスタムプロパティについてはこちらをご覧ください。"
+  />
 </head>
 
 import EncapsulationPill from '@components/page/api/EncapsulationPill';
 
 <EncapsulationPill type="shadow" />
 
-
-TabBarは、[tab buttons](tab-button.md)のセットを含むUIコンポーネントです。各[tab](tab.md)と通信するには、[tabs](tabs.md)の内部にTabBarを設定する必要があります。
-
-
-
+TabBar は、[tab buttons](tab-button.md)のセットを含む UI コンポーネントです。各[tab](tab.md)と通信するには、[tabs](tabs.md)の内部に TabBar を設定する必要があります。
 
 ## 使い方
 
@@ -51,7 +51,6 @@ TabBarは、[tab buttons](tab-button.md)のセットを含むUIコンポーネ�
 
 </TabItem>
 
-
 <TabItem value="javascript">
 
 ```html
@@ -77,7 +76,6 @@ TabBarは、[tab buttons](tab-button.md)のセットを含むUIコンポーネ�
 ```
 
 </TabItem>
-
 
 <TabItem value="react">
 
@@ -106,9 +104,7 @@ export const TabBarExample: React.FC = () => (
 );
 ```
 
-
 </TabItem>
-
 
 <TabItem value="vue">
 
@@ -131,16 +127,16 @@ export const TabBarExample: React.FC = () => (
 </template>
 
 <script>
-import { IonIcon, IonTabBar, IonTabButton, IonTabs } from '@ionic/vue';
-import { call, person, settings } from 'ionicons/icons';
-import { defineComponent } from 'vue';
+  import { IonIcon, IonTabBar, IonTabButton, IonTabs } from '@ionic/vue';
+  import { call, person, settings } from 'ionicons/icons';
+  import { defineComponent } from 'vue';
 
-export default defineComponent({
-  components: { IonIcon, IonTabBar, IonTabButton, IonTabs },
-  setup() {
-    return { call, person, settings }
-  }
-});
+  export default defineComponent({
+    components: { IonIcon, IonTabBar, IonTabButton, IonTabs },
+    setup() {
+      return { call, person, settings };
+    },
+  });
 </script>
 ```
 
@@ -149,19 +145,25 @@ export default defineComponent({
 </Tabs>
 
 ## プロパティ
+
 <Props />
 
 ## イベント
+
 <Events />
 
 ## メソッド
+
 <Methods />
 
 ## CSS Shadow Parts
+
 <Parts />
 
-## CSSカスタムプロパティ
+## CSS カスタムプロパティ
+
 <CustomProps />
 
 ## Slots
+
 <Slots />

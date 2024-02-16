@@ -1,6 +1,7 @@
 ---
-title: "ion-radio-group"
+title: 'ion-radio-group'
 ---
+
 import Props from '@ionic-internal/component-api/v7/radio-group/props.md';
 import Events from '@ionic-internal/component-api/v7/radio-group/events.md';
 import Methods from '@ionic-internal/component-api/v7/radio-group/methods.md';
@@ -10,14 +11,15 @@ import Slots from '@ionic-internal/component-api/v7/radio-group/slots.md';
 
 <head>
   <title>ion-radio-group: Radio Button Group Usage for Ionic Apps</title>
-  <meta name="description" content="radio groupとは、radioボタンのグループです。radio groupは、ユーザーがセットから最大1つのradioボタンを選択できるようにします。 ion-radio-groupの使用方法について、詳しくはこちらをご覧ください。" />
+  <meta
+    name="description"
+    content="radio groupとは、radioボタンのグループです。radio groupは、ユーザーがセットから最大1つのradioボタンを選択できるようにします。 ion-radio-groupの使用方法について、詳しくはこちらをご覧ください。"
+  />
 </head>
 
 import EncapsulationPill from '@components/page/api/EncapsulationPill';
 
-
-ラジオ・グループは、[ラジオ](./radio)のグループのためのコンテナです。ラジオグループは、ユーザーがラジオボタンを1つだけ選択できるようにします。ラジオ・グループに属するラジオ・ボタンを1つチェックすると、同じグループ内で以前にチェックされたラジオ・ボタンのチェックは解除されます。ラジオ・グループの使用例については、[radio](./radio)のドキュメントを参照してください。
-
+ラジオ・グループは、[ラジオ](./radio)のグループのためのコンテナです。ラジオグループは、ユーザーがラジオボタンを 1 つだけ選択できるようにします。ラジオ・グループに属するラジオ・ボタンを 1 つチェックすると、同じグループ内で以前にチェックされたラジオ・ボタンのチェックは解除されます。ラジオ・グループの使用例については、[radio](./radio)のドキュメントを参照してください。
 
 ## Interfaces
 
@@ -40,21 +42,26 @@ interface RadioGroupCustomEvent<T = any> extends CustomEvent {
 }
 ```
 
-
 ## プロパティ
+
 <Props />
 
 ## イベント
+
 <Events />
 
 ## メソッド
+
 <Methods />
 
 ## CSS Shadow Parts
+
 <Parts />
 
-## CSSカスタムプロパティ
+## CSS カスタムプロパティ
+
 <CustomProps />
 
 ## Slots
+
 <Slots />

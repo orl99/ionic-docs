@@ -1,6 +1,7 @@
 ---
-title: "ion-toast"
+title: 'ion-toast'
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -13,7 +14,10 @@ import Slots from '@ionic-internal/component-api/v7/toast/slots.md';
 
 <head>
   <title>ion-toast: A Dismissible App Notification Alert Component</title>
-  <meta name="description" content="ion-toast コンポーネントは、システムメッセージやフィードバックを表示するアプリの通知です。トーストのアラートはコンテンツの上に表示され、インタラクションを再開するには解除されます。" />
+  <meta
+    name="description"
+    content="ion-toast コンポーネントは、システムメッセージやフィードバックを表示するアプリの通知です。トーストのアラートはコンテンツの上に表示され、インタラクションを再開するには解除されます。"
+  />
 </head>
 
 import EncapsulationPill from '@components/page/api/EncapsulationPill';
@@ -22,7 +26,7 @@ import EncapsulationPill from '@components/page/api/EncapsulationPill';
 
 トーストは、最近のアプリケーションでよく使われる小さな通知です。操作に関するフィードバックを提供したり、システムメッセージを表示したりするために使用されます。トーストは、アプリケーションのコンテンツの上に表示され、アプリケーションによって解除されると、アプリケーションとの対話を再開することができます。
 
-## インラインToasts (推奨)
+## インライン Toasts (推奨)
 
 `ion-toast`は、テンプレートに直接コンポーネントを記述して使用することができます。これにより、トーストを表示するために配線する必要があるハンドラの数を減らすことができます。
 
@@ -102,7 +106,7 @@ import ThemingPlayground from '@site/static/usage/v7/toast/theming/index.md';
 
 ### スクリーンリーダー
 
-トーストは、スクリーンリーダーから[accessible](../reference/glossary#a11y)であるためにariaプロパティを設定しますが、これらのプロパティは、十分な説明がない場合や、トーストがアプリでどのように使用されているかに合っていない場合は、上書きすることができます。
+トーストは、スクリーンリーダーから[accessible](../reference/glossary#a11y)であるために aria プロパティを設定しますが、これらのプロパティは、十分な説明がない場合や、トーストがアプリでどのように使用されているかに合っていない場合は、上書きすることができます。
 
 #### 役割
 
@@ -196,9 +200,9 @@ const toast = await toastController.create({
 
 While this is not a complete list, here are some guidelines to follow when using toasts.
 
-* Do not require user interaction to dismiss toasts. For example, having a "Dismiss" button in the toast is fine, but the toast should also automatically dismiss on its own after a timeout period. If you need user interaction for a notification, consider using an [alert](./alert) instead.
+- Do not require user interaction to dismiss toasts. For example, having a "Dismiss" button in the toast is fine, but the toast should also automatically dismiss on its own after a timeout period. If you need user interaction for a notification, consider using an [alert](./alert) instead.
 
-* For toasts with long messages, consider adjusting the `duration` property to allow users enough time to read the content of the toast.
+- For toasts with long messages, consider adjusting the `duration` property to allow users enough time to read the content of the toast.
 
 ## Interfaces
 
@@ -242,19 +246,25 @@ interface ToastOptions {
 ```
 
 ## プロパティ
+
 <Props />
 
 ## イベント
+
 <Events />
 
 ## メソッド
+
 <Methods />
 
 ## CSS Shadow Parts
+
 <Parts />
 
-## CSSカスタムプロパティ
+## CSS カスタムプロパティ
+
 <CustomProps />
 
 ## Slots
+
 <Slots />

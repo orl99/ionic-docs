@@ -1,6 +1,7 @@
 ---
-title: "ion-reorder-group"
+title: 'ion-reorder-group'
 ---
+
 import Props from '@ionic-internal/component-api/v7/reorder-group/props.md';
 import Events from '@ionic-internal/component-api/v7/reorder-group/events.md';
 import Methods from '@ionic-internal/component-api/v7/reorder-group/methods.md';
@@ -10,16 +11,17 @@ import Slots from '@ionic-internal/component-api/v7/reorder-group/slots.md';
 
 <head>
   <title>ion-reorder-group: Wrapper Component for Reorder Items</title>
-  <meta name="description" content="ion-reorder-groupは、Ionicアプリでion-reorderコンポーネントを使用するアイテムのためのラッパーコンポーネントです。ion-reorder-groupの使い方はこちらをご覧ください。" />
+  <meta
+    name="description"
+    content="ion-reorder-groupは、Ionicアプリでion-reorderコンポーネントを使用するアイテムのためのラッパーコンポーネントです。ion-reorder-groupの使い方はこちらをご覧ください。"
+  />
 </head>
 
 import EncapsulationPill from '@components/page/api/EncapsulationPill';
 
+reorder group は、[reorder](./reorder) コンポーネントを使用したアイテムのコンテナです。ユーザがアイテムをドラッグして新しい位置にドロップすると、 `ionItemReorder` イベントがディスパッチされる。このイベントのハンドラは `complete` メソッドを呼び出すように実装する必要があります。
 
-reorder groupは、[reorder](./reorder) コンポーネントを使用したアイテムのコンテナです。ユーザがアイテムをドラッグして新しい位置にドロップすると、 `ionItemReorder` イベントがディスパッチされる。このイベントのハンドラは `complete` メソッドを呼び出すように実装する必要があります。
-
-`ionItemReorder` イベントの `detail` プロパティには、`from` と `to` インデックスを含む、並べ替え操作に関するすべての関連情報が含まれます。並び替えのコンテキストでは、アイテムは `from` インデックスから `to` インデックスに移動します。reorder groupの使用例については、[reorder](./reorder) のドキュメントを参照してください。
-
+`ionItemReorder` イベントの `detail` プロパティには、`from` と `to` インデックスを含む、並べ替え操作に関するすべての関連情報が含まれます。並び替えのコンテキストでは、アイテムは `from` インデックスから `to` インデックスに移動します。reorder group の使用例については、[reorder](./reorder) のドキュメントを参照してください。
 
 ## Interfaces
 
@@ -44,21 +46,26 @@ interface ItemReorderCustomEvent extends CustomEvent {
 }
 ```
 
-
 ## プロパティ
+
 <Props />
 
 ## イベント
+
 <Events />
 
 ## メソッド
+
 <Methods />
 
 ## CSS Shadow Parts
+
 <Parts />
 
-## CSSカスタムプロパティ
+## CSS カスタムプロパティ
+
 <CustomProps />
 
 ## Slots
+
 <Slots />

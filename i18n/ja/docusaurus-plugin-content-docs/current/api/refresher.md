@@ -1,6 +1,7 @@
 ---
-title: "ion-refresher"
+title: 'ion-refresher'
 ---
+
 import Props from '@ionic-internal/component-api/v7/refresher/props.md';
 import Events from '@ionic-internal/component-api/v7/refresher/events.md';
 import Methods from '@ionic-internal/component-api/v7/refresher/methods.md';
@@ -10,23 +11,23 @@ import Slots from '@ionic-internal/component-api/v7/refresher/slots.md';
 
 <head>
   <title>ion-refresher: Pull-to-Refresh Page Content on Ionic Apps</title>
-  <meta name="description" content="ion-refresherは、コンテンツコンポーネントにpull-to-refresh機能を提供します。これにより、ユーザーはタッチ操作でページをプルダウンし、より多くのデータを取得することができます。" />
+  <meta
+    name="description"
+    content="ion-refresherは、コンテンツコンポーネントにpull-to-refresh機能を提供します。これにより、ユーザーはタッチ操作でページをプルダウンし、より多くのデータを取得することができます。"
+  />
 </head>
 
 import EncapsulationPill from '@components/page/api/EncapsulationPill';
 
-
-リフレッシャーは、コンテンツコンポーネントにプルトゥリフレッシュ機能を提供します。pull-to-refreshパターンは、ユーザがより多くのデータを取得するために、データのリストをプルダウンすることを可能にします。
+リフレッシャーは、コンテンツコンポーネントにプルトゥリフレッシュ機能を提供します。pull-to-refresh パターンは、ユーザがより多くのデータを取得するために、データのリストをプルダウンすることを可能にします。
 
 データは、リフレッシャーの出力イベント中に変更する必要があります。非同期処理が完了し、リフレッシュが終了したら、リフレッシュに対して `complete()` を呼び出す必要があります。
-
 
 ## 基本的な使い方
 
 import Basic from '@site/static/usage/v7/refresher/basic/index.md';
 
 <Basic />
-
 
 ## Pull プロパティ
 
@@ -38,7 +39,6 @@ import PullProperties from '@site/static/usage/v7/refresher/pull-properties/inde
 
 <PullProperties />
 
-
 ## カスタムリフレッシャーコンテンツ
 
 デフォルトのアイコン、スピナー、テキストは、リフレッシャーの状態が `pulling` か `refreshing` かによって、[リフレッシャーコンテンツ](./refresher-content) 上でカスタマイズすることができます。
@@ -49,19 +49,17 @@ import CustomContent from '@site/static/usage/v7/refresher/custom-content/index.
 
 <CustomContent />
 
-
 ## Native Refreshers
 
-iOSとAndroidの両プラットフォームは、pull-to-refreshにネイティブのような流動的な感覚を与えるために、それぞれのデバイスが公開するプロパティを使用するリフレッシュ機能を提供します。
+iOS と Android の両プラットフォームは、pull-to-refresh にネイティブのような流動的な感覚を与えるために、それぞれのデバイスが公開するプロパティを使用するリフレッシュ機能を提供します。
 
-iOSとMaterial Designのネイティブリフレッシュ機能は、Ionicのデフォルトで有効になっています。ただし、iOSネイティブのリフレッシュ機能は、正しく動作するためにラバーバンドスクロールに依存しており、結果としてiOSデバイスとのみ互換性があります。ラバーバンドスクロールをサポートしていないデバイスでiOSモードで動作するアプリのために、フォールバックリフレッシャーを提供しています。
+iOS と Material Design のネイティブリフレッシュ機能は、Ionic のデフォルトで有効になっています。ただし、iOS ネイティブのリフレッシュ機能は、正しく動作するためにラバーバンドスクロールに依存しており、結果として iOS デバイスとのみ互換性があります。ラバーバンドスクロールをサポートしていないデバイスで iOS モードで動作するアプリのために、フォールバックリフレッシャーを提供しています。
 
-ネイティブのリフレッシャーでは、マテリアルデザイン用の `circular` スピナーを使用しますが、iOS では `lines` スピナーを使用します。iOSでは、ティックマークはページが下に引っ張られるにつれて徐々に表示されます。
+ネイティブのリフレッシャーでは、マテリアルデザイン用の `circular` スピナーを使用しますが、iOS では `lines` スピナーを使用します。iOS では、ティックマークはページが下に引っ張られるにつれて徐々に表示されます。
 
-[Pullプロパティ](#pull-properties)、`closeDuration`、`snapbackDuration`のような特定のリフレッシャープロパティは、ネイティブリフレッシャーの多くがスクロールベースであるため、互換性がありません。サポートされていないプロパティの詳細については、[Properties](#properties)を参照してください。
+[Pull プロパティ](#pull-properties)、`closeDuration`、`snapbackDuration`のような特定のリフレッシャープロパティは、ネイティブリフレッシャーの多くがスクロールベースであるため、互換性がありません。サポートされていないプロパティの詳細については、[Properties](#properties)を参照してください。
 
 [リフレッシュコンテンツ](#custom-refresher-content)の `pullingIcon` を任意のアイコンまたはスピナーに設定することで、ネイティブリフレッシュモードを無効にすることができます。使用可能な値については、[Ionicons](https://ionic.io/ionicons) および [Spinner](./spinner) のドキュメントを参照してください。
-
 
 ## Usage with Virtual Scroll
 
@@ -71,7 +69,6 @@ import CustomScrollTarget from '@site/static/usage/v7/refresher/custom-scroll-ta
 
 <CustomScrollTarget />
 
-
 ## 高度な使用法
 
 リフレッシャーはどのようなタイプのコンテンツでも使用できますが、ネイティブアプリでよくある使用例は、更新時に更新されるデータのリストを表示することです。以下の例では、アプリはデータのリストを生成し、更新が完了したときにリストの先頭にデータを追加します。実際のアプリでは、ネットワークまたはデータベース呼び出しによってリクエストを送信した後に、データを受信して更新します。
@@ -79,7 +76,6 @@ import CustomScrollTarget from '@site/static/usage/v7/refresher/custom-scroll-ta
 import Advanced from '@site/static/usage/v7/refresher/advanced/index.md';
 
 <Advanced />
-
 
 ## Interfaces
 
@@ -103,19 +99,25 @@ interface RefresherCustomEvent extends CustomEvent {
 ```
 
 ## プロパティ
+
 <Props />
 
 ## イベント
+
 <Events />
 
 ## メソッド
+
 <Methods />
 
 ## CSS Shadow Parts
+
 <Parts />
 
-## CSSカスタムプロパティ
+## CSS カスタムプロパティ
+
 <CustomProps />
 
 ## Slots
+
 <Slots />
